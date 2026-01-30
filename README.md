@@ -239,6 +239,12 @@ how to use them, and to learn how to do some manual serialization and deserializ
 - In the Rust compiler, what _must_ happen when memory is allocated for a variable?
 - Why might we want to pack multiple pieces of data into a single byte for a communication protocol?
 
+## My Answers
+- Serialize in this context means converting a User struct into a sequence of bytes that follows our protocol. Deserialize means converting those bytes back into a User struct.
+- Shared behavior in Rust is defined using traits.
+- When memoru is allocated for a variable, the compiler enforces ownership, borrowing, and lifetime rules to make sure memory is safe at compile time.
+- Packing multiple pieces of data into a byte reduces packlet size, saves bandwidth, and improves efficiency.
+
 ## What to submit
 - Push your working code to the main branch of your GitHub Repository before the deadline
 - Edit the README to answer the above questions
